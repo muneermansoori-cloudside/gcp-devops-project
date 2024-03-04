@@ -8,7 +8,7 @@ steps:
   # Deploy image on cloud run
 - name: 'gcr.io/cloud-builders/gcloud'
   script: |
-    gcloud run deploy muneer-cr --image gcr.io/$PROJECT_ID/gcpdevops --region us-central1 --platform managed --allow-unauthenticated
+    gcloud run deploy muneer-cr --image gcr.io/cloudside-academy/gcpdevops --region us-central1 --platform managed --allow-unauthenticated
 
   # deploy container image to GKE
 # - name: "gcr.io/cloud-builders/gke-deploy"
